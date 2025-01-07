@@ -630,68 +630,74 @@ img {
 }
 
 
-
 /** 5. Hero --> Background Content 
 *******************************************************************/
 
-.hero .background-content
-{
+.hero .background-content {
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-
     overflow: hidden;
-
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Ensure the height is full viewport height */
 }
 
-.hero .background-content .background-content-inner
-{
+.hero .background-content .background-content-inner {
     position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;
-
     width: 100%;
     height: 100vh;
-
     -webkit-transform: translate3d(-50%, -50%, 0px) !important;
-            transform: translate3d(-50%, -50%, 0px) !important;
+    transform: translate3d(-50%, -50%, 0px) !important;
 }
 
-.hero .background-content.parallax-on .background-content-inner
-{
+.hero .background-content.parallax-on .background-content-inner {
     width: 110%;
     height: 110vh;
 }
 
-.hero .background-content .background-overlay
-{
+.hero .background-content .background-overlay {
     position: absolute;
     z-index: 50;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100vh;
-
     opacity: .6;
     background: #111;
 }
 
-.hero .background-content .background-img
-{
+.hero .background-content .background-img {
     position: absolute;
     margin-left: 25%;
     width: 50%;
     height: 180vh;
+    background: url(../img/background.jpg) no-repeat center center;
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center center; /* Keeps the image centered */
+}
 
-    background: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/* Desktop adjustments */
+@media (min-width: 1024px) {
+    .hero .background-content .background-img {
+        margin-left: 25%; /* Keeps the image margin from left */
+        width: 50%; /* Maintains the image width */
+        height: 180vh; /* Ensures the image height on desktop */
+        background-size: cover; /* Ensures the image covers the container on desktop */
+        background-position: center center; /* Keeps the image centered */
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero .background-content .background-img {
+        background-size: cover; /* Ensures the image covers the entire container */
+        background-position: center; /* Keeps the image centered */
+        height: 100vh; /* Adjust to ensure the height matches the viewport */
+    }
 }
 
 
@@ -967,4 +973,39 @@ img {
 .portfolio-item-b img:last-child
 {
     margin-bottom: 0;
+}
+@media (max-width: 700px) {
+    html {
+        font-size: 8px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 6px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 90%; /* Adjust the width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 100%; /* Adjust the width for mobile devices */
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 8px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 6px !important;
+    }
 }
