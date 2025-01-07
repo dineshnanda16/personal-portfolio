@@ -151,7 +151,11 @@ a:hover
 }
 
 
-
+img {
+    width: var(--image-width);
+    height: var(--image-height);
+  }
+  
 .navigation-button p
 {
     font-size: 2.2rem;

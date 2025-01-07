@@ -120,7 +120,11 @@
                      0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff;
     }
 }
-
+img {
+    width: var(--image-width);
+    height: var(--image-height);
+  }
+  
 
 .flip-card p {
     font-size: 16px;

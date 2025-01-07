@@ -94,3 +94,8 @@ button:hover {
 .next {
     right: 10px;
 }
+img {
+    width: var(--image-width);
+    height: var(--image-height);
+  }
+  
