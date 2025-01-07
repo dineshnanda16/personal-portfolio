@@ -151,24 +151,31 @@ a:hover
 }
 
 
-/* General styles for the image */
+/* General styles for all devices */
 img {
-    max-width: 100%; /* Ensures the image never overflows its container */
+    max-width: 100%; /* Ensures the image scales down */
     height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes any extra spacing below the image */
-    margin: 0 auto; /* Centers the image */
+    display: block;
+    margin: 0 auto;
   }
   
-  /* Specific styling for smaller devices */
-  @media (max-width: 768px) { /* For tablets and smaller screens */
+  /* Container styling (optional for additional control) */
+  .image-container {
+    width: 100%; /* Ensure container takes full width */
+    max-width: 100%; /* Prevent overflow */
+    text-align: center; /* Center content */
+  }
+  
+  /* Specific styles for smaller devices */
+  @media (max-width: 768px) {
     img {
-      width: 90%; /* Adjust width to fit smaller screens */
+      width: 90%; /* Adjust the width for tablets */
     }
   }
   
-  @media (max-width: 480px) { /* For mobile phones */
+  @media (max-width: 480px) {
     img {
-      width: 100%; /* Adjust width to fit mobile screens */
+      width: 100%; /* Adjust the width for mobile devices */
     }
   }
   
