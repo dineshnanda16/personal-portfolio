@@ -105,7 +105,7 @@
     font-family: 'Playfair Display', serif; /* Elegant font style */
     color: #ffffff;
     text-shadow: 0 0 5px #1e90ff, 0 0 10px #1e90ff, 0 0 20px #1e90ff, 
-                 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff;
+                 0 0 30px #00bfff, 0 0 40px #a0b4ba, 0 0 50px #00bfff;
     animation: glow 2s infinite alternate;
 }
 

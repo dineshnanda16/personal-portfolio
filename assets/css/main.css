@@ -125,6 +125,32 @@ a:hover
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
 }
+/* Animation for the name */
+/* Initial state for the name */
+.name-animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* When the name is hidden */
+.name-animated.hidden {
+    opacity: 0;
+    transform: translateY(-50px); /* Move the name up and make it invisible */
+}
+
+/* Add this CSS to your main stylesheet */
+.animation-container h1, .animation-container p,
+.animation-fade-left p {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.hidden {
+    transform: translateY(-100%); /* Moves the element out of view */
+    opacity: 0; /* Fades out the element */
+}
+
+
 
 .navigation-button p
 {

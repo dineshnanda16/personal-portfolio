@@ -52,10 +52,37 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // JavaScript to hide and show elements based on scroll direction
+    let lastScrollTop = 0; // Track the last scroll position
+    const animationContainers = document.querySelectorAll('.animation-container, .animation-fade-left');
+
+    window.addEventListener('scroll', function () {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Loop through all animation containers (h1, p)
+        animationContainers.forEach(container => {
+            const h1 = container.querySelector('h1');
+            const pElements = container.querySelectorAll('p');
+
+            // If scrolling down, hide the name and subline
+            if (currentScrollTop > lastScrollTop) {
+                if (h1) h1.classList.add('hidden');
+                pElements.forEach(p => p.classList.add('hidden'));
+            } else {
+                // If scrolling up, show the name and subline
+                if (h1) h1.classList.remove('hidden');
+                pElements.forEach(p => p.classList.remove('hidden'));
+            }
+        });
+
+        // Update last scroll position
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    });
+
     // NAVIGATION BUTTON SCROLL BEHAVIOR WITH HORIZONTAL EASING FOR ALL BUTTONS
     const navigationButtons = document.querySelectorAll('.navigation-button-1, .navigation-button-2, .navigation-button');
 
-    let lastScrollTop = 0;
+    let lastScrollTopNav = 0;
 
     // Add transitions for smooth effects
     navigationButtons.forEach(button => {
@@ -65,7 +92,7 @@ jQuery(document).ready(function ($) {
     window.addEventListener('scroll', function () {
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-        const scrollDirection = currentScroll > lastScrollTop ? 'down' : 'up';
+        const scrollDirection = currentScroll > lastScrollTopNav ? 'down' : 'up';
 
         // Apply the horizontal movement logic to navigation buttons
         function navigationButtonHide(button, calculatedTranslateHeader) {
@@ -86,7 +113,7 @@ jQuery(document).ready(function ($) {
             navigationButtonHide(button, calculatedTranslateHeader);
         });
 
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
+        lastScrollTopNav = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
     });
 
     // HERO/BUTTON ON SCROLL ANIMATING

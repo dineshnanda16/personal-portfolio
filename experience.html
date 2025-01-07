@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Experience Gallery</title>
+    <link rel="stylesheet" href="experience.html">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <button class="prev" onclick="move(-1)">&#10094;</button>
+        
+        <div class="image-box" id="imageBox">
+            <div class="image-front">
+                <img src="https://via.placeholder.com/300" alt="Experience 1">
+            </div>
+            <div class="image-back">
+                <div class="details">
+                    <h3>Experience Title 1</h3>
+                    <p>Description of the experience. This could be details about the image.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="next" onclick="move(1)">&#10095;</button>
+    </div>
+
+    <script src="exp.js"></script>
+</body>
+</html>
