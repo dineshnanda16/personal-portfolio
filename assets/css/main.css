@@ -748,6 +748,24 @@ img {
     background-position: center;
     background-size: cover;
 }
+/* Desktop adjustments */
+@media (min-width: 1024px) {
+    .portfolio .item .item-cover {/* Keeps the image margin from left */
+        width: 100%; /* Maintains the image width */
+        height: 100%; /* Ensures the image height on desktop */
+        background-size: cover; /* Ensures the image covers the container on desktop */
+        background-position: center center; /* Keeps the image centered */
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .portfolio .item .item-cover{
+        background-size: cover; /* Ensures the image covers the entire container */
+        background-position: center; /* Keeps the image centered */
+        height: 25vh; /* Adjust to ensure the height matches the viewport */
+    }
+}
 
 .portfolio .item i
 {
