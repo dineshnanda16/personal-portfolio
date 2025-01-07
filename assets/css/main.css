@@ -151,10 +151,27 @@ a:hover
 }
 
 
+/* General styles for the image */
 img {
-    width: var(--image-width);
-    height: var(--image-height);
+    max-width: 100%; /* Ensures the image never overflows its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra spacing below the image */
+    margin: 0 auto; /* Centers the image */
   }
+  
+  /* Specific styling for smaller devices */
+  @media (max-width: 768px) { /* For tablets and smaller screens */
+    img {
+      width: 90%; /* Adjust width to fit smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) { /* For mobile phones */
+    img {
+      width: 100%; /* Adjust width to fit mobile screens */
+    }
+  }
+  
   
 .navigation-button p
 {
