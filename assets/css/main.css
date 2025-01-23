@@ -617,6 +617,7 @@ img {
 .hero .front-content .container-mid h1
 {
     font-weight: bold;
+    text-align: right;
 
     margin-top: 0;
     margin-bottom: .24em;
@@ -624,15 +625,14 @@ img {
 
 .hero .front-content .container-mid p.subline
 {
+    text-align: right;
     font-size: 3rem;
-
     letter-spacing: .025em;
 }
 
 
 /** 5. Hero --> Background Content 
 *******************************************************************/
-
 .hero .background-content {
     position: fixed;
     z-index: 1;
@@ -659,46 +659,81 @@ img {
     height: 110vh;
 }
 
-.hero .background-content .background-overlay {
+/*.hero .background-content .background-overlay {
     position: absolute;
     z-index: 50;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    opacity: .6;
+    height: 100%;
+    opacity: 0.6;
     background: #111;
-}
+}*/
 
 .hero .background-content .background-img {
-    position: absolute;
-    margin-left: 25%;
+    position: absolute; /* Adjusted to align the image closer to the left */
+    float: left;
     width: 50%;
-    height: 180vh;
-    background: url(../img/background.jpg) no-repeat center center;
+    height: 180%;
+    margin-left: 0; /* Adjusted to align the image closer to the left */
+    background-position: left left;
+    background-position: center center;
     background-size: cover; /* Ensures the image covers the container */
-    background-position: center center; /* Keeps the image centered */
+ /* Keeps the image centered */
+}
+@media screen and (max-width: 768px) {
+    .hero .background-content .background-img {
+        position: absolute;
+        margin-top: 35%;
+        margin-left: 20%; /* Add space on the left */
+        margin-right: 20%; /* Add space on the right */
+        width: 60%; /* Reduce the width to account for the margins */
+        height:100vh; /* Make the image full height of the viewport */
+        background-position: center center; /* Center the image */
+        background-size: cover; /* Ensure the image covers the container *//* Ensure the image covers the container */
+    }
+    .hero .front-content .container-mid h1
+{
+    font-weight: bold;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 530px;
+    margin-bottom: .22em;
 }
 
-/* Desktop adjustments */
-@media (min-width: 1024px) {
-    .hero .background-content .background-img {
-        margin-left: 25%; /* Keeps the image margin from left */
-        width: 50%; /* Maintains the image width */
-        height: 180vh; /* Ensures the image height on desktop */
-        background-size: cover; /* Ensures the image covers the container on desktop */
-        background-position: center center; /* Keeps the image centered */
+.hero .front-content .container-mid p.subline
+{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0%;
+    overflow: hidden; /* Ensures the content is hidden during animation */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    
+    width: 0; /* Initially hide the text */
+    visibility: hidden;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Reveals the entire text */
     }
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .hero .background-content .background-img {
-        background-size: cover; /* Ensures the image covers the entire container */
-        background-position: center; /* Keeps the image centered */
-        height: 100vh; /* Adjust to ensure the height matches the viewport */
+/* Blinking cursor animation */
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #fdfdfd;
     }
 }
+}
+
 
 
 /** 6. PORTFOLIO
@@ -707,17 +742,19 @@ img {
 .portfolio
 {
     padding: 0 30px;
+    
 }
 
 .portfolio .item
 {
     position: relative;
-
+    align-items: left;
     display: block;
     overflow: hidden;
 
-    max-width: 990px;
+    max-width: 690px;
     margin: 0 auto 10rem auto;
+    margin-left: 50%;
 
     border: 6px solid #fff;
 }
@@ -756,16 +793,33 @@ img {
         background-size: cover; /* Ensures the image covers the container on desktop */
         background-position: center center; /* Keeps the image centered */
     }
-}
+    .portfolio .item
+    {
+        position: relative;
+        align-items: left;
+        display: block;
+        overflow: hidden;
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .portfolio .item .item-cover{
-        background-size: cover; /* Ensures the image covers the entire container */
-        background-position: center; /* Keeps the image centered */
-        height: 25vh; /* Adjust to ensure the height matches the viewport */
+        max-width: 690px;
+        margin: 0 auto 10rem auto;
+        margin-left: 50%;
+
+        border: 6px solid #fff;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .portfolio { 
+        flex-direction: column; /* Stack items vertically */ 
+        padding: 0 15px; 
+    }
+
+    .portfolio .item { 
+        max-width: 90%; /* Fit items within the screen */ 
+        margin: 0 auto 10rem auto; /* Center items on mobile */ 
+    }
+}
+
 
 .portfolio .item i
 {
@@ -1027,3 +1081,4 @@ img {
         font-size: 6px !important;
     }
 }
+
