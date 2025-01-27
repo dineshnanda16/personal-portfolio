@@ -1,228 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+   
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dinesh Nanda</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="robots" content="noodp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PAGE TITLE -->
+    <title>Personal Portfolio</title>
 
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=latin-ext" rel="stylesheet">
 
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-
-  <style>
-    /* General body styling */
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: auto;
-      background: black;
-      cursor: none;
-    }
-
-    /* Styling for the splash container */
-    #splash-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      pointer-events: none;
-      z-index: 9998;
-    }
-
-    /* Styling for the splash/ripple effect */
-    .splash {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 50%;
-      pointer-events: none;
-      animation: splash-animation 0.6s ease-out forwards;
-    }
-
-    /* Splash animation */
-    @keyframes splash-animation {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(15);
-        opacity: 0;
-      }
-    }
-
-    /* Custom cursor styling */
-    .cursor {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 50%;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      transition: transform 0.1s ease-out;
-    }
-
-    /* Menu Bar Styling */
-    .menu-bar {
-      
-      position: fixed;
-      top: 20px;
-      margin-left: 10%;
-      display: flex;  /* Aligns the buttons horizontally */
-      flex-direction: row; /* Horizontal layout */
-      gap: 15px; /* Space between buttons */
-      z-index: 10000;
-    }
-
-    .menu-bar a {
-        margin-top: 10%;
-      background-color: white;
-      color: black;
-      text-decoration: none;
-      padding: 10px 10px;
-      font-size: 16px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      text-align: center;
-    }
-
-    .menu-bar a:hover {
-      background-color: black;
-        color: white;
-    }
-  </style>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
+
 <body class="contains-hero main-page">
-  
-  <!-- Menu Bar (Right-Aligned Horizontal Buttons) -->
-  <div class="menu-bar">
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="achievement.html">Achievements</a>
-  </div>
-
-  <!-- Custom Cursor and Splash Effect Container -->
-  <div id="splash-container"></div>
-  <div class="cursor"></div>
-
-  <!-- PRELOADER -->
-  <div class="preloader">
-    <div class="spinner">
-      <div class="bounce-1"></div>
-      <div class="bounce-2"></div>
-      <div class="bounce-3"></div>
-    </div>
-  </div>
-
-  <!-- HERO -->
-  <div class="hero">
-    <div class="front-content">
-      <div class="container-mid">
-        <div class="animation-container animation-fade-right" data-animation-delay="0">
-          <h1>Dinesh Nanda</h1>
+    
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <!-- SPINNER -->
+        <div class="spinner">
+            <div class="bounce-1"></div>
+            <div class="bounce-2"></div>
+            <div class="bounce-3"></div>
         </div>
-        <div class="animation-container animation-fade-left" data-animation-delay="200"> 
-          <p class="subline">Web Developer</p>
-          <p class="subline">UI/UX Designer</p>
-          <p class="subline1">Swipe up</p>
+        <!-- /SPINNER -->
+    </div>
+    <!-- /PRELOADER -->
+    
+    <!-- HERO -->
+    <div class="hero">
+        <!-- FRONT CONTENT -->
+        <div class="front-content">
+            <!-- CONTAINER MID -->
+            <div class="container-mid">
+                <!-- ANIMATION CONTAINER -->
+                <div class="animation-container animation-fade-right" data-animation-delay="0">
+                    <h1>Dinesh Nanda</h1>
+                </div>
+                <!-- /ANIMATION CONTAINER -->
+
+                <!-- ANIMATION CONTAINER -->
+                <div class="animation-container animation-fade-left" data-animation-delay="200"> 
+                    <p class="subline">Web Developer</p>
+                    <p class="subline">Scroll Down To See More About Me</p>
+                </div>
+                <!-- /ANIMATION CONTAINER -->
+            </div>
+            <!-- /CONTAINER MID -->
         </div>
-      </div>
-    </div>
-    <div class="background-content parallax-on">
-      <div class="background-content-inner">
-        <div class="background-overlay"></div>
-        <div class="background-img layer" data-depth="0.05">
-          <img src="./assets/img/background.jpg" alt="">
+        <!-- /FRONT CONTENT -->
+
+        <!-- BACKGROUND CONTENT -->
+        <div class="background-content parallax-on">
+            <!-- BACKGROUND CONTENT INNER -->
+            <div class="background-content-inner">
+                <div class="background-overlay"></div>
+                <div class="background-img layer" data-depth="0.05"></div>
+            </div>
+            <!-- /BACKGROUND CONTENT INNER -->
         </div>
-      </div>
+        <!-- /BACKGROUND CONTENT -->
+    </div>
+    <!-- /HERO -->
+    
+    <!-- ABOUT, ACHIEVEMENTS, AND EXPERIENCE -->
+    <div class="portfolio">
+        <!-- ABOUT SECTION -->
+        <a class="item scroll-animated-from-bottom" href="about.html">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <div class="item-cover" style="background-image: url(assets/img/ABOUT.jpg)"></div>
+            
+        </a>
+        <!-- /ABOUT SECTION -->
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <a class="item scroll-animated-from-bottom" href="achievement.html">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <div class="item-cover" style="background-image: url(assets/img/ABOUT\ \(1\).jpg)"></div>
+           
+        </a>
+        <!-- /ACHIEVEMENTS SECTION -->
+
+        <!-- EXPERIENCE SECTION 
+        <a class="item scroll-animated-from-bottom" href="experience.html">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <div class="item-cover" style="background-image: url(assets/img/ABOUT.gif)"></div>
+    
+        </a>
+         /EXPERIENCE SECTION -->
+         <!-- Project SECTION -->
+        <a class="item scroll-animated-from-bottom" href="projects.html">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <div class="item-cover" style="background-image: url(assets/img/ABOUT\ \(2\).jpg)"></div>
+            
+        </a>
+        <!-- /Project SECTION -->
+    </div>
+    <!-- /ABOUT, ACHIEVEMENTS, AND EXPERIENCE -->
+
+    <!-- FOOTER -->
+<div class="footer">
+  <!-- FOOTER INNER -->
+  <div class="footer-inner scroll-animated-from-bottom">
+      <p>© 2025 | Design by DineshNanda</p>
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dinesh-nanda-" target="_blank" class="social-icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/dineshnanda16" target="_blank" class="social-icon">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <!-- Contact Me Link -->
+        <a href="contact.html" class="social-icon">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+      </a>
     </div>
   </div>
+  <!-- /FOOTER INNER -->
+</div>
+<!-- /FOOTER -->
 
-  <!-- Portfolio Section -->
-  <div class="portfolio">
-    <a class="item scroll-animated-from-bottom" href="about.html">
-      <i class="fa fa-eye" aria-hidden="true"></i>
-      <div class="item-cover" style="background-image: url(assets/img/ABOUT.jpg)"></div>
-    </a>
-    <a class="item scroll-animated-from-bottom" href="achievement.html">
-      <i class="fa fa-eye" aria-hidden="true"></i>
-      <div class="item-cover" style="background-image: url(assets/img/ABOUT\ \(1\).jpg)"></div>
-    </a>
-    <a class="item scroll-animated-from-bottom" href="projects.html">
-      <i class="fa fa-eye" aria-hidden="true"></i>
-      <div class="item-cover" style="background-image: url(assets/img/ABOUT\ \(2\).jpg)"></div>
-    </a>
-  </div>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    <div class="footer-inner scroll-animated-from-bottom">
-      <p>© 2025 </p>
-      <i class="fa fa-angle-double-up scroll-top" aria-hidden="true"></i>
-    </div>
-  </div>
-
-  <!-- JAVASCRIPTS -->
-  <script type="text/javascript" src="assets/js/plugins.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
-  <script type="text/javascript" src="assets/js/scroll-navigation.js"></script>
-
-  <script>
-    // Custom Cursor and Splash Effect Script
-    const cursor = document.querySelector('.cursor');
-    const splashContainer = document.getElementById("splash-container");
-
-    // Move the custom cursor with the mouse
-    document.addEventListener("mousemove", (event) => {
-      cursor.style.left = `${event.pageX}px`;
-      cursor.style.top = `${event.pageY}px`;
-
-      // Create a splash element
-      const splash = document.createElement("div");
-      splash.classList.add("splash");
-
-      // Position the splash element at the cursor's location
-      splash.style.left = `${event.pageX}px`;
-      splash.style.top = `${event.pageY}px`;
-
-      // Append the splash to the container
-      splashContainer.appendChild(splash);
-
-      // Remove the splash element after the animation ends
-      splash.addEventListener("animationend", () => {
-        splash.remove();
-      });
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const lines = document.querySelectorAll(".subline");
-        let currentIndex = 0;
-
-        function showNextLine() {
-            lines.forEach((line, index) => {
-                line.style.visibility = index === currentIndex ? "visible" : "hidden";
-                line.style.animation = index === currentIndex ? "typing 3s steps(30, end) infinite, blink 0.5s step-end infinite alternate" : "none";
-            });
-            currentIndex = (currentIndex + 1) % lines.length;
-        }
-
-        // Start the loop
-        setInterval(showNextLine, 4000); // Adjust time to match the animation duration
-        showNextLine(); // Show the first line immediately
-    });
-</script>
-
+    <!-- JAVASCRIPTS -->
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/scroll-navigation.js"></script>
 </body>
+
 </html>
