@@ -19,6 +19,8 @@
         <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-PoG5v3tUt0W1A2CrAnBHVxECkTwUoRQZqj6D0Uljuy2OwF+wrvEaVZAmN8iM3yKce9Ik0HcIYAEZwq2SzH1bZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <style>
             .custom-box {
                 margin: 20px 0;
@@ -60,6 +62,40 @@
                     width: var(--skill-level);
                 }
             }
+                .social-links {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .social-links li {
+                    margin: 12px 0;
+                }
+
+                .social-links a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #ffffff; /* White text for dark background */
+                    transition: color 0.3s ease;
+                }
+
+                .social-links a:hover {
+                    color: #1da1f2; /* Optional hover color */
+                }
+
+                .social-links svg {
+                    flex-shrink: 0;
+                    fill: #ffffff; /* White icons for black background */
+                    transition: fill 0.3s ease;
+                }
+
+                .social-links a:hover svg {
+                    fill: #1da1f2; /* Icon color on hover (light blue) */
+                }
+
+
         </style>
     </head>
     <body class="sub-page">
@@ -78,55 +114,91 @@
         <!-- ABOUT -->
         <div class="about">
             <div class="container-fluid">
-                <h1 class="scroll-animated-from-bottom">Hi, my name is Dinesh Nanda.</h1>
+                <h1 class="scroll-animated-from-bottom">Hi, my name is Dinesh N</h1>
                 <h4 class="scroll-animated-from-bottom">I'm a Web Developer and a Tech Enthusiast.</h4>
                 <p class="scroll-animated-from-bottom">Currently pursuing my B.Tech Information Technology 3rd year at Rajalakshmi Engineering College Thandalam.</p>
-                <p class="scroll-animated-from-bottom">I am deeply fascinated by the world of coding and have a keen interest in honing my skills in this dynamic field. Recognizing the importance of coding in today's technology-driven world, I am eager to embark on a journey of learning and exploration. I am currently dedicated to mentoring students at the Gold Heart Foundation, focusing on making Python programming accessible and easy to grasp.
-                    Coding, for me, is not just a skill but a gateway to creativity and problem-solving, and I am enthusiastic about the opportunities it presents for personal and professional growth.</p>
-
-                <!-- Education Details Box -->
+                <p class="scroll-animated-from-bottom">Motivated Information Technology student with a focus on Web Development and UI/UX designing. Quick tolearn new technologies and always eager to explore different areas in the tech field. Possess strongleadership skills and enjoy working both independently and in a team</p>
+        <!-- Education Details Box -->
                 <div class="custom-box scroll-animated-from-bottom">
                     <h3>Education Details</h3>
                     <p><strong>College:</strong> Rajalakshmi Engineering College, 3rd Year, CGPA: 8.07</p>
-                    <p><strong>12th:</strong> Sri Sankara Vidyalaya Mat Hr Sec School, Percentage: 90.6%</p>
-                    <p><strong>10th:</strong> Sri Sankara Vidyalaya Mat Hr Sec School, Percentage: 75%</p>
+                    <p><strong>HSC:</strong> Sri Sankara Vidyalaya Mat Hr Sec School, Percentage: 90.6%</p>
+                    <p><strong>SSLC:</strong> Sri Sankara Vidyalaya Mat Hr Sec School, Percentage: 75%</p>
                 </div>
 
-                <!-- Skill Set Box -->
-                <div class="custom-box scroll-animated-from-bottom">
-                    <h3>Skill Set</h3>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="--skill-level: 90%;">Python - 90%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="--skill-level: 85%;">HTML - 85%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="--skill-level: 85%;">CSS - 85%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="--skill-level: 75%;">JavaScript - 75%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="--skill-level: 70%;">React - 70%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="--skill-level: 60%;">MongoDB - 60%</div>
-                    </div>
-                </div>
+    <!-- Skill Set Box -->
+        <div class="custom-box scroll-animated-from-bottom">
+            <h3>Skill Set</h3>
 
-                <!-- SOCIAL LINKS -->
-                <ul class="scroll-animated-from-bottom social-links">
-                    <li><a href="https://www.linkedin.com/in/dinesh-nanda-">Linkedin</a></li>
-                    <li><a href="https://github.com/dineshnanda16">Github</a></li>
-                    
-                </ul>
+            <!-- Coding Languages -->
+            <h4>Coding Languages</h4>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="--skill-level: 85%;">Java - 85%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="--skill-level: 80%;">Python - 80%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="--skill-level: 85%;">HTML - 85%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="--skill-level: 85%;">CSS - 85%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="--skill-level: 75%;">JavaScript - 75%</div>
+            </div>
 
-                <h6 class="scroll-animated-from-bottom">Get in touch with me via:</h6>
-                <p class="scroll-animated-from-bottom">dineshnanda.official@gmail.com</p>
+            <!-- Technologies / Frameworks -->
+            <h4>Technologies / Frameworks</h4>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="--skill-level: 70%;">React - 70%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="--skill-level: 60%;">MongoDB - 60%</div>
             </div>
         </div>
-        <!-- FOOTER -->
+
+
+
+       <!-- SOCIAL LINKS -->
+<ul class="scroll-animated-from-bottom social-links">
+    <li>
+        <a href="https://www.linkedin.com/in/dinesh-nanda-" target="_blank">
+            <!-- LinkedIn Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0077b5" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.027-3.037-1.849-3.037-1.853 0-2.136 1.445-2.136 2.937v5.669h-3.554v-11.5h3.414v1.57h.049c.476-.9 1.637-1.849 3.368-1.849 3.599 0 4.264 2.368 4.264 5.452v6.327zm-14.327-13.077c-1.144 0-2.067-.927-2.067-2.067s.923-2.067 2.067-2.067c1.141 0 2.067.927 2.067 2.067s-.926 2.067-2.067 2.067zm1.777 13.077h-3.554v-11.5h3.554v11.5zm16.103-20.452h-18c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h18c1.104 0 2-.896 2-2v-20c0-1.104-.896-2-2-2z"/>
+            </svg>
+            <span style="margin-left: 8px;">LinkedIn</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/dineshnanda16" target="_blank">
+            <!-- GitHub Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#181717" viewBox="0 0 24 24">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
+                3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 
+                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 
+                1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 
+                3.495.998.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 
+                0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 
+                0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 
+                1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 
+                3.285-1.23.655 1.653.243 2.873.12 3.176.77.84 
+                1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 
+                5.92.43.37.823 1.096.823 2.21 0 1.595-.015 2.877-.015 
+                3.27 0 .32.216.694.825.576 4.765-1.588 
+                8.2-6.084 8.2-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span style="margin-left: 8px;">GitHub</span>
+        </a>
+    </li>
+</ul>
+
+<h6 class="scroll-animated-from-bottom">Get in touch with me via:</h6>
+<p class="scroll-animated-from-bottom">dineshnanda.official@gmail.com</p>
+
+
+    <!-- FOOTER -->
         <div class="footer">
             <div class="footer-inner scroll-animated-from-bottom">
                 <p>© 2025  | Design by DineshNanda</a></p>
