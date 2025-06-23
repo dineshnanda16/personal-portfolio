@@ -15,7 +15,6 @@ This website showcases my skills, projects, leadership experiences, and achievem
 
 - ✅ Responsive layout for all devices
 - 🎥 Project showcases with videos and carousels
-- 📄 Resume download button on homepage
 - 🌟 Leadership gallery with photo sections
 - 🎨 Dark theme with smooth animations
 - 🧩 Scroll-based section animations and parallax backgrounds
